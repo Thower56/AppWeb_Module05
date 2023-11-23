@@ -8,14 +8,24 @@ import './App.css';
 
 function App() {
   <BrowserRouter>
-  <Container>
-  <BarreNavigation />
-    <Routes>
-      <Route path='/' element={<BarreNavigation />}/>
-      <Route path=''/>
-    </Routes>
-  </Container>
+    <Container>
+    <BarreNavigation />
+    <PageAccueil />
+      <Routes>
+        <Route path='/' element={<PageAccueil />}/>
+        <Route path='/Projets/Ampoule' element={<Ampoule />}/>
+      </Routes>
+    </Container>
   </BrowserRouter>
+}
+
+export function PageAccueil(){
+  return(
+    <>
+    <h1>Test</h1>
+    <p>This is the from page</p>
+    </>
+  )
 }
 
 export const BarreNavigation = () => {
