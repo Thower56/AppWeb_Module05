@@ -1,25 +1,38 @@
+
 import logo from './logo.svg';
+import { Container, Navbar } from 'react-bootstrap';
+import { BrowserRouterm, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
+import { Ampoule } from './Projets/Ampoule/Ampoule';
 import './App.css';
 
 function App() {
+  <BrowserRouter>
+  <Container>
+  <BarreNavigation />
+    <Routes>
+      <Route path='/' element={<BarreNavigation />}/>
+      <Route path=''/>
+    </Routes>
+  </Container>
+  </BrowserRouter>
+}
+
+export const BarreNavigation = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Navbar>
+      <Container>
+        <Navbar.Toggle aria-controls='basic-navbar-nav'/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Accueil</Nav.Link>
+            <Nav.Link href="/projets">Projets</Nav.Link>
+            <Nav.Link href="/a-propos">A propos</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  )
 }
 
 export default App;
