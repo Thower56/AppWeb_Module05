@@ -1,5 +1,5 @@
 import React from 'react';
 
-export function AfficherTitre({ Titre }) {
-  return <h1>{Titre}</h1>;
+export function AfficherTitre({ titre }) {
+  return <h1>{titre}</h1>;
 }

@@ -22,8 +22,8 @@ export function ChoisirRace({races, handleClick}) {
                       <img 
                       height={200}
                       width={150}
-                      src={`${race.race}.jpg`}
-                      alt={`${race.race}`}
+                      src={`../${race.race}.jpg`}
+                      alt={`../${race.race}`}
                       onClick={() => {handleClick(index)}}
                       />
                   </td>)

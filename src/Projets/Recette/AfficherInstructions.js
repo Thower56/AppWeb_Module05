@@ -2,11 +2,11 @@ import React from 'react';
 import { AfficherTitreSecondaire } from './AfficherTitreSecondaire';
 import { Instruction } from './Instruction';
 
-export function AfficherInstructions({ Instructions }) {
+export function AfficherInstructions({ instructions }) {
   return (
     <>
-      <AfficherTitreSecondaire Titre={"Instructions"} />
-      <ol>{Instructions.map(i => <Instruction Instruction={i} key={i} />)}</ol>
+      <AfficherTitreSecondaire titre={"Instructions"} />
+      <ol>{instructions.map(i => <Instruction instruction={i} key={i} />)}</ol>
     </>
   );
 }

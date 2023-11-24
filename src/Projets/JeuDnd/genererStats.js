@@ -1,4 +1,4 @@
-import { genererNombreAleatoire } from '../genererNombreAleatoire.js';
+import { genererNombreAleatoire } from '../JeuDes/genererNombreAleatoire';
 
 export function genererStats({ race }) {
   return {

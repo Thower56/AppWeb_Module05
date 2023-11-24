@@ -2,11 +2,11 @@ import React from 'react';
 import { AfficherTitreSecondaire } from './AfficherTitreSecondaire';
 import { Ingredient } from './Ingredient';
 
-export function AfficherIngredients({ Ingredients }) {
+export function AfficherIngredients({ ingredients }) {
   return (
     <>
-      <AfficherTitreSecondaire Titre={"Ingredients"} />
-      <ul>{Ingredients.map(i => <Ingredient Ingredients={i} key={i} />)}</ul>
+      <AfficherTitreSecondaire titre={"Ingredients"} />
+      <ul>{ingredients.map(i => <Ingredient ingredients={i} key={i} />)}</ul>
     </>
   );
 }

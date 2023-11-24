@@ -1,4 +1,4 @@
-import { genererNombreAleatoire } from './JeuDes/genererNombreAleatoire.js';
+import { genererNombreAleatoire } from './genererNombreAleatoire.js';
 
 
 export function brasserMainAleatoire(min, max) {

@@ -1,5 +1,5 @@
 import React from 'react';
 
-export function AfficherTitreSecondaire({ Titre }) {
-  return <h2>{Titre}</h2>;
+export function AfficherTitreSecondaire({ titre }) {
+  return <h2>{titre}</h2>;
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-export function Instruction({ Instruction }) {
+export function Instruction({ instruction }) {
   return (
     <>
-      <li>{Instruction}</li>
+      <li>{instruction}</li>
     </>
   );
 }

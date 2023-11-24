@@ -1,11 +1,11 @@
 import React from 'react';
 import { AfficherTitreSecondaire } from './AfficherTitreSecondaire';
 
-export function AfficherDescription({ Description }) {
+export function AfficherDescription({ description }) {
   return (
     <>
-      <AfficherTitreSecondaire Titre={"Description"} />
-      <p>{Description}</p>
+      <AfficherTitreSecondaire Titre={"description"} />
+      <p>{description}</p>
     </>
   );
 }
